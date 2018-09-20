@@ -8,11 +8,6 @@
 
 import Foundation
 
-print("Tasks Manager is now open.")
-class Tasks{
-    let task: String
-    
-    init(task: String){
-        self.task = task
-    }
-}
+print("The task manager is now opened.\n")
+let taskManager = Tasks()
+taskManager.go()

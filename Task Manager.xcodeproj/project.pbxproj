@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9D1474B221501D9D00846CB1 /* Menu .swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1474B121501D9D00846CB1 /* Menu .swift */; };
-		9DE1B924215088950074E4BF /* Class taskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE1B923215088950074E4BF /* Class taskManager.swift */; };
+		9D17894A21528DF80016F676 /* TaskDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D17894921528DF80016F676 /* TaskDataClass.swift */; };
+		9D17894C215297570016F676 /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D17894B215297570016F676 /* Tasks.swift */; };
 		9DE45C42215046A2008694FB /* Task Manager Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE45C41215046A2008694FB /* Task Manager Options.swift */; };
 		9DEED7B4215019D1002782A9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEED7B3215019D1002782A9 /* main.swift */; };
 /* End PBXBuildFile section */
@@ -26,8 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9D1474B121501D9D00846CB1 /* Menu .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Menu .swift"; sourceTree = "<group>"; };
-		9DE1B923215088950074E4BF /* Class taskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Class taskManager.swift"; sourceTree = "<group>"; };
+		9D17894921528DF80016F676 /* TaskDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDataClass.swift; sourceTree = "<group>"; };
+		9D17894B215297570016F676 /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
 		9DE45C41215046A2008694FB /* Task Manager Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task Manager Options.swift"; sourceTree = "<group>"; };
 		9DEED7B0215019D1002782A9 /* Task Manager */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Task Manager"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DEED7B3215019D1002782A9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -64,8 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				9DEED7B3215019D1002782A9 /* main.swift */,
-				9DE1B923215088950074E4BF /* Class taskManager.swift */,
-				9D1474B121501D9D00846CB1 /* Menu .swift */,
+				9D17894921528DF80016F676 /* TaskDataClass.swift */,
+				9D17894B215297570016F676 /* Tasks.swift */,
 				9DE45C41215046A2008694FB /* Task Manager Options.swift */,
 			);
 			path = "Task Manager";
@@ -128,10 +128,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D17894C215297570016F676 /* Tasks.swift in Sources */,
 				9DE45C42215046A2008694FB /* Task Manager Options.swift in Sources */,
+				9D17894A21528DF80016F676 /* TaskDataClass.swift in Sources */,
 				9DEED7B4215019D1002782A9 /* main.swift in Sources */,
-				9DE1B924215088950074E4BF /* Class taskManager.swift in Sources */,
-				9D1474B221501D9D00846CB1 /* Menu .swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

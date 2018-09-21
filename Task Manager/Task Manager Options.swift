@@ -9,19 +9,19 @@
 import Foundation
 
 class TaskManager {
-    var taskArray: [TaskData] = [TaskData(title: "Task1", detailsOfTask: "randomstuff")]
+    var taskArray: [TaskData] = [TaskData(title: "", detailsOfTask: "")]
     func createANewTask() {
         //prompt user to enter a new title for the task
-        print("Please enter the title of the task you would like to add.")
+        print("\nEnter the title of the task you would like to add.")
         //Get title input from user and store in a variable
         var newTasksTitle = readLine()
         //Check and make sure the input isn't nil or an empty string
-        while newTasksTitle == nil || newTasksTitle == ""{
+        while newTasksTitle == nil || newTasksTitle == "" {
             print("Ivalid title. Enter a valid title.")
             newTasksTitle = readLine()
         }
         //prompt user to enter a new title for the task
-        print("Please enter the detail of the task you would like to add.")
+        print("\nEnter the details of the task you would like to add.")
         //Get title input from user and store in a variable
         var newTasksDetail = readLine()
         //Check and make sure the input isn't nil or an empty string
@@ -37,13 +37,13 @@ class TaskManager {
     func deleteTask() {
         //List all of our task titles with a number for the user to select
         for index in 1..<taskArray.count {
-            print("\n\(index). \(taskArray[index].title), \(taskArray[index].detailsOfTask)")
+            print("\(index). \(taskArray[index].title), \(taskArray[index].detailsOfTask)")
         }
-        print("\nPlease enter the number of the task you would like to remove.")
+        print("\nEnter the number of the task you would like to remove.")
         var userInput = Int(readLine()!)
         let validTaskIndex = Array(1..<taskArray.count)
         while userInput == nil || !validTaskIndex.contains(userInput!) {
-            print("Invalid input. Please enter a useable index.")
+            print("Invalid input. Enter a useable index.")
             userInput = Int(readLine()!)
         }
         taskArray.remove(at: userInput!)
@@ -63,13 +63,13 @@ class TaskManager {
                 if let completeBy = task.completeBy {
                     let dateFormatter = DateFormatter()
                     dateFormatter.dateFormat = "MM/dd/yyyy"
-                    print("\(task.title), \(task.detailsOfTask) is due on: \(dateFormatter.string(from: completeBy))")
+                    print("\(task.title), \(task.detailsOfTask) needs to be completed by: \(dateFormatter.string(from: completeBy))")
                 }
             }
         }
     }
     func listCompletedTasks() {
-        //Thus will show all the task that are completed
+        //This will show all the task that are completed
         for task in taskArray {
             if task.completionStatus {
                 print("\(task.title), \(task.detailsOfTask)")
@@ -77,17 +77,17 @@ class TaskManager {
         }
     }
     func markTaskComplete() {
-        //Marking a task a complete
+        //Marking a task complete
         for index in 0..<taskArray.count {
             if taskArray[index].completionStatus == false {
                 print("\(index).\(taskArray[index].title)")
             }
         }
-        print("Please enter the number of the task you have completed:")
+        print("\nEnter the number of the task you have completed:")
         var userInput = Int(readLine()!)
         
         while userInput == nil {
-            print("Invalid input. Please enter a usable number.")
+            print("Invalid input. Enter a usable number.")
             userInput = Int(readLine()!)
         }
         taskArray[userInput!].completionStatus = true

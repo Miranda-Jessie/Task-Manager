@@ -25,7 +25,7 @@ class Tasks {
         }
     }
     func validateInput(_ input: String) -> Bool{
-        let validMenuOptions = Array(1...8)
+        let validMenuOptions = Array(1...9)
         guard let number = Int(input) else {
             return false
         }
@@ -43,6 +43,7 @@ class Tasks {
                 6. Mark a completed task incomplete
                 7. delete a task
                 8. Exit the program
+                   ....
 
                 Please enter a number between 1 and 8
                 """)
@@ -74,6 +75,8 @@ class Tasks {
         case "8":
             //This will call the quit function
             quit()
+        case "9":
+            easterEgg()
         default:
             break
         }
@@ -90,7 +93,7 @@ class Tasks {
         //Since the user is ready to quit, set shouldQuit = true
         shouldQuit = true
         //Show the user a message
-        print("\nThank you for using the application.")
+        print("\nYou have exit the task manager.")
         
     }
 }

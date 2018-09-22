@@ -9,7 +9,7 @@
 import Foundation
 
 class TaskManager {
-    var taskArray: [TaskData] = [TaskData(title: "", detailsOfTask: "")]
+    var taskArray: [TaskData] = [TaskData(title: "Random Task", detailsOfTask: "Random Detail")]
     func createANewTask() {
         //prompt user to enter a new title for the task
         print("\nEnter the title of the task you would like to add.")

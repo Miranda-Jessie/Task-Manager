@@ -67,8 +67,8 @@
 			children = (
 				9DEED7B3215019D1002782A9 /* main.swift */,
 				9D17894921528DF80016F676 /* TaskDataClass.swift */,
-				9D17894B215297570016F676 /* Tasks.swift */,
 				9DE45C41215046A2008694FB /* Task Manager Options.swift */,
+				9D17894B215297570016F676 /* Tasks.swift */,
 				9D861E8821546E3700F57256 /* Easter Egg.swift */,
 			);
 			path = "Task Manager";

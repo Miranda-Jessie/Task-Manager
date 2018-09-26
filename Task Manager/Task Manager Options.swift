@@ -99,8 +99,17 @@ class TaskManager {
         for index in 0..<taskArray.count {
             if taskArray[index].completionStatus == true {
                 print("\(index).\(taskArray[index].title)")
-                var userInput = Int(readLine()!)
             }
         }
+        print("Please enter the number of the task want to mark incomplete:")
+        var userInput = Int(readLine()!)
+        
+        while userInput == nil {
+            print("Invalid input. Please enter a valid index.")
+            userInput = Int(readLine()!)
+        }
+        taskArray[userInput!].completionStatus = false
+        //Removing the due date since the task is now incomplete
+        taskArray[userInput!].completeBy = nil
     }
 }
